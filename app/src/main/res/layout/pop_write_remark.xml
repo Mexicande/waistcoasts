@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:background="#70000000">
+
+    <EditText
+        android:textColor="@color/White"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/remark_edt"
+        android:layout_width="0dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:textSize="@dimen/text_body_size"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <ImageButton
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/confirm_button_bg"
+        android:src="@mipmap/check_nobg"
+        android:id="@+id/remark_confirm"
+        android:layout_width="44dp"
+        android:scaleType="fitCenter"
+        android:layout_height="44dp"
+        />
+</LinearLayout>

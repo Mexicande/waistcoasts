@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="用来顶开和头部距离" />
+
+    <TextView
+        android:id="@+id/money_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/empty"
+        android:layout_marginTop="8dp"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="记账金额："
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/money_title"
+        android:layout_toRightOf="@+id/money_title"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical|end"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="6.66"
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/money_title"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/category_icon"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="账目分类:"
+        android:textSize="@dimen/text_body_size" />
+
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/category_title"
+        android:layout_toLeftOf="@+id/category_text"
+        android:background="@color/contextBgColor" />
+
+    <TextView
+        android:id="@+id/category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/category_title"
+        android:layout_alignParentRight="true"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical|end"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="吃喝"
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/out_or_in_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/category_title"
+        android:layout_marginTop="8dp"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="账目类型:"
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/out_or_in"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/out_or_in_title"
+        android:layout_toRightOf="@+id/out_or_in_title"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical|end"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="收入"
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/create_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/out_or_in_title"
+        android:layout_marginTop="8dp"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="创建日期："
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/create_date"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/create_date_title"
+        android:layout_toRightOf="@+id/create_date_title"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical|end"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="2016-10-27"
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/create_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/create_date_title"
+        android:layout_marginTop="8dp"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="创建时间："
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/create_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/create_time_title"
+        android:layout_toRightOf="@+id/create_time_title"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical|end"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="16：51"
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/remark_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/create_time_title"
+        android:layout_marginTop="8dp"
+        android:background="@color/contextBgColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="备注："
+        android:textSize="@dimen/text_body_size" />
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remark_title"
+        android:background="@color/contextBgColor"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="备注内容备备注内容注内容备注内容备注内容备注内容"
+        android:textColor="#7b7777"
+        android:textSize="@dimen/text_body_size" />
+</RelativeLayout>

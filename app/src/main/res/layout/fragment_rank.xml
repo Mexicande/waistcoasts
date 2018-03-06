@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <android.support.v7.widget.Toolbar
+      android:background="@color/Blue"
+      android:layout_height="50dp"
+      android:layout_width="match_parent">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="排行榜"
+          android:layout_gravity="center"
+          android:textSize="20sp"
+          android:textColor="#ffffff"/>
+  </android.support.v7.widget.Toolbar>
+    <lib.kingja.switchbutton.SwitchMultiButton
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/rank_switchmultibutton"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        app:strokeRadius="5dp"
+        app:strokeWidth="1dp"
+        app:selectedTab="0"
+        app:selectedColor="#757575"
+        app:textSize="16sp" />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#757575"
+        android:layout_height="1dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_View1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

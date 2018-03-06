@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "785556847020",
+    "firebase_url": "https://myaccountbook-a3a39.firebaseio.com",
+    "project_id": "myaccountbook-a3a39",
+    "storage_bucket": "myaccountbook-a3a39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785556847020:android:48f1e8eca31e326f",
+        "android_client_info": {
+          "package_name": "com.six.xinyidai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785556847020-oi4538lbqvc0c5o7ppjt7o3c21s9vci5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOQiK9b9aj6DjrUi_A-mBI4J2Nvof3xSY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785556847020-oi4538lbqvc0c5o7ppjt7o3c21s9vci5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_today"
+            android:checked="true"
+            android:icon="@drawable/ic_menu_today"
+            android:title="@string/today_title" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_history"
+            android:title="@string/history_fragment_title" />
+        <item
+            android:id="@+id/nav_statement"
+            android:icon="@drawable/ic_menu_chart_pie"
+            android:title="@string/statement_fragment_title" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu_category"
+            android:title="@string/category_manager_title" />
+        <item
+            android:id="@+id/nav_user_centre"
+            android:icon="@drawable/ic_menu_user"
+            android:title="@string/user_centre" />
+    </group>
+
+    <item android:title="@string/more">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+            <item
+                android:visible="false"
+                android:checkable="false"
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:checkable="false"
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_setting"
+                android:title="@string/setting_activity_title" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

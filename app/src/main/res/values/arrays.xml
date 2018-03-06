@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="indicator_colors">
+        <item>#F50057</item>
+        <item>#F50057</item>
+        <item>#F50057</item>
+        <item>#E91E63</item>
+    </array>
+    <string-array name="items">
+        <item>保存到手机</item>
+        <item>下载</item>
+    </string-array>
+</resources>

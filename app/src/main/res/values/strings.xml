@@ -1,0 +1,72 @@
+<resources>
+    <string name="version_name">V1.0</string>
+    <string name="app_name">新易钱包</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="add_record_activity_title">添加记录</string>
+    <string name="record_details_activity_title">记录详情</string>
+    <string name="setting_activity_title">设置</string>
+    <string name="history_fragment_title">历史查看</string>
+    <string name="statement_fragment_title">分析统计</string>
+    <string name="entry">立即体验</string>
+    <string name="add_on_new_version_tip">%s将在后续版本中增加，敬请关注！</string>
+    <string name="custom_category_function">添加自定义分类功能</string>
+    <string name="go_today">回到今天</string>
+    <string name="type_out">支出</string>
+    <string name="type_in">收入</string>
+    <string name="not_filled">未填写</string>
+    <string name="use_colorful_ui">使用多彩画面</string>
+    <string name="colorful_ui_description">使用更加丰富多彩的界面(%s启用)</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_sign_up">注册</string>
+    <string name="title_activity_change_nick">修改个人信息</string>
+    <string name="auth_failed">啊哦！登录失败了！稍后再试试</string>
+    <string name="default_display_name">典当贷</string>
+    <string name="next_step">下一步</string>
+    <string name="finish">完成</string>
+    <string name="please_input_nick">请输入昵称</string>
+    <string name="please_input_mail">请输入注册邮箱</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="forget_password_ask">忘记密码？</string>
+    <string name="send_reset_password_mail">发送重置密码邮件</string>
+    <string name="on_loading">加载中</string>
+    <string name="default_mail"> </string>
+    <string name="record_num">账本记录</string>
+    <string name="category_num">拥有分类</string>
+    <string name="user_centre">个人中心</string>
+    <string name="sign_out">注销登录</string>
+    <string name="money_num_to_large">输入的数字太大装不下啦!</string>
+    <string name="to">至</string>
+    <string name="write_remark">写备注</string>
+    <string name="more">更多</string>
+    <string name="delete_all_record">删除所有账本记录</string>
+    <string name="notice">注意</string>
+    <string name="delete_all_record_tip">你确定要删除所有账本记录吗？删除后无法恢复</string>
+    <string name="add_new_category">添加分类</string>
+    <string name="category_manager_title">分类管理</string>
+    <string name="today_title">首页</string>
+    <string name="exit">退出</string>
+    <string name="delete">删除</string>
+    <string name="delete_category">删除分类</string>
+    <string name="ss_continue">继续</string>
+    <string name="login_no_for_help">当前版本登录功能为测试版，登陆不会对本使用程序的基础功能有任何帮助（后续版本会增加同步账本功能，但不保证会保留当前版本的注册信息），且服务器在国外，登录等待时间可能较长，甚至失败，你确定要继续吗？</string>
+    <string name="delete_record_message">你确定要删除本条记录吗？删除后无法恢复</string>
+    <string name="exit_message">确定要退出吗？</string>
+    <string name="set_budget">设置预算</string>
+    <string name="budget">每月预算</string>
+    <string name="please_input_the_correct_amount">请输入正确的金额</string>
+    <string name="update_success">修改成功</string>
+    <string name="about_us">关于我们</string>
+    <string name="version">版本</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="captcha_btn_resend">重发验证码</string>
+    <string name="validate_btn_hint">获取验证码</string>
+    <string name="password_check">请输入6-20位密码</string>
+    <string name="get_verification_code">获取验证码</string>
+
+
+</resources>
