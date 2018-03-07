@@ -33,15 +33,14 @@
     <Button
         android:id="@+id/btn_guide_enter"
         android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:background="@null"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
         android:padding="8dp"
-        android:text=""
+        android:text="立即进入"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:visibility="gone"
+        android:textSize="18sp"
         tools:visibility="visible"/>
 </RelativeLayout>

@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.six.xinyidai.MainActivity"
+    tools:context="com.wuxiao.yourday.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <com.six.xinyidai.view.CustomViewPager
+    <com.wuxiao.yourday.view.CustomViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"

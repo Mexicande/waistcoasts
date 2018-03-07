@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
-    tools:context="com.six.xinyidai.MainActivity">
+    tools:context="com.wuxiao.yourday.MainActivity">
 
     <include layout="@layout/view_toolbar" />
 

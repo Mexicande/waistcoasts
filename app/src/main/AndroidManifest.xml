@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.six.xinyidai">
+    package="com.wuxiao.yourday">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
-        android:name="com.six.xinyidai.App"
+        android:name="com.wuxiao.yourday.App"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
@@ -25,7 +25,7 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:replace="android:icon">
         <activity
-            android:name="com.six.xinyidai.activity.SplashActivity"
+            android:name="com.wuxiao.yourday.activity.SplashActivity"
             android:theme="@style/FirstTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,35 +34,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.six.xinyidai.ui.activity.AddRecordActivity"
+            android:name="com.wuxiao.yourday.ui.activity.AddRecordActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.six.xinyidai.ui.activity.RecordDetailsActivity"
+            android:name="com.wuxiao.yourday.ui.activity.RecordDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.LoginActivity"
+            android:name="com.wuxiao.yourday.ui.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.SignUpActivity"
+            android:name="com.wuxiao.yourday.ui.activity.SignUpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.ChangeDisplayName"
+            android:name="com.wuxiao.yourday.ui.activity.ChangeDisplayName"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.ResetPasswordActivity"
+            android:name="com.wuxiao.yourday.ui.activity.ResetPasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.AddCategoryActivity"
+            android:name="com.wuxiao.yourday.ui.activity.AddCategoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.SettingActivity"
+            android:name="com.wuxiao.yourday.ui.activity.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.AboutActivity"
+            android:name="com.wuxiao.yourday.ui.activity.AboutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.six.xinyidai.ui.activity.SurprisedActivity"
+            android:name="com.wuxiao.yourday.ui.activity.SurprisedActivity"
             android:screenOrientation="portrait" />
 
         <!-- <service android:name=".service.HandleMsgService">//firebase推送 -->
@@ -76,29 +76,21 @@
         <!-- </intent-filter> -->
         <!-- </service> -->
 
-        <activity android:name="com.six.xinyidai.MainActivity"
+        <activity android:name="com.wuxiao.yourday.MainActivity"
             android:screenOrientation="portrait"/>
-        //下载
         <service android:name="me.shenfan.updateapp.UpdateService"/>
-
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="59f6daf3f29d987af8000113" />
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="baidu" />
 
         <!-- 诸葛 -->
         <meta-data android:value="91be901ec8194403abb12e59fcc7baf2" android:name = "ZHUGE_APPKEY"/>
         <meta-data android:value="现金超人" android:name = "ZHUGE_CHANNEL"/>
 
-        <activity android:name="com.six.xinyidai.activity.GuideActivity" />
-        <activity android:name="com.six.xinyidai.ui.activity.Quannengjietiao" />
-        <activity android:name="com.six.xinyidai.ui.activity.HomeActivity" />
-        <activity android:name="com.six.xinyidai.ui.activity.HtmlActivity" />
-        <activity android:name="com.six.xinyidai.ui.activity.ProductActivity" />
-        <activity android:name="com.six.xinyidai.ui.activity.RecommendProductActivity" />
-        <activity android:name="com.six.xinyidai.ui.activity.XianJinchaoren"></activity>
+        <activity android:name="com.wuxiao.yourday.activity.GuideActivity" />
+        <activity android:name="com.wuxiao.yourday.ui.activity.Quannengjietiao" />
+        <activity android:name="com.wuxiao.yourday.ui.activity.HomeActivity" />
+        <activity android:name="com.wuxiao.yourday.ui.activity.HtmlActivity" />
+        <activity android:name="com.wuxiao.yourday.ui.activity.ProductActivity" />
+        <activity android:name="com.wuxiao.yourday.ui.activity.RecommendProductActivity" />
+        <activity android:name="com.wuxiao.yourday.ui.activity.XianJinchaoren"></activity>
     </application>
 
 </manifest>

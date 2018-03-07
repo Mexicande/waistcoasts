@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.six.xinyidai.ui.activity.HtmlActivity">
+    tools:context="com.wuxiao.yourday.ui.activity.HtmlActivity">
     <ProgressBar
         android:id="@+id/bar"
         style="?android:attr/progressBarStyleHorizontal"

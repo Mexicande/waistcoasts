@@ -1,21 +1,42 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'walle'
 
 android {
     compileSdkVersion 24
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.six.xinyidai"
+        applicationId "com.wuxiao.yourday"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    signingConfigs {
+        debug {
+
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            storeFile file("/Users/apple/Documents/文件/打个白条.jks")
+            storePassword "000000"
+            keyAlias "安卓"
+            keyPassword "000000"
+        }
     }
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.release
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -24,7 +45,15 @@ android {
     greendao {//greenDao相关
         schemaVersion 1
         targetGenDir 'src/main/java'
-        daoPackage 'com.six.xinyidai.util.greenDAO'
+        daoPackage 'com.wuxiao.yourday.util.greenDAO'
+    }
+    walle {
+        // 指定渠道包的输出路径
+        apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+        // 定制渠道包的APK的文件名称
+        apkFileNameFormat = '${channel}-v${versionName}-${buildTime}.apk';
+        // 渠道配置文件
+        channelFile = new File("${project.getProjectDir()}/channel")
     }
 }
 
@@ -73,5 +102,7 @@ dependencies {
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.12'
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.meituan.android.walle:library:1.1.6'
+
     compile 'com.zhuge.analysis:zhugeio:latest.integration'
 }
