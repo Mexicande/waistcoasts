@@ -242,15 +242,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         setCurrentItem(i);
         history.add(event.getOld());
     }
-    public void onResume() {
-        super.onResume();
-        MobclickAgent.onResume(this);
-    }
 
-    public void onPause() {
-        super.onPause();
-        MobclickAgent.onPause(this);
-    }
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         eventBus.unregister(this);

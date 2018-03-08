@@ -3,6 +3,8 @@
 buildscript {
     repositories {
         jcenter()
+        google()
+
         //url "https://jitpack.io"
     }
     dependencies {
@@ -12,7 +14,7 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
         classpath 'com.google.gms:google-services:3.0.0'
-        classpath 'com.meituan.android.walle:plugin:1.1.6'
+        classpath 'com.meituan.android.walle:plugin:1.1.5'
 
     }
 }
@@ -23,6 +25,8 @@ allprojects {
         maven {
             url "https://jitpack.io"
         }
+        google()
+
     }
 }
 
